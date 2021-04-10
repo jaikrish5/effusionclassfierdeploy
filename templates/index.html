@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : SimpleWork 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20140225
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="{{url_for('static',filename='css/default.css')}}" rel="stylesheet" type="text/css" media="all" />
+<link href="{{url_for('static',filename='css/fonts.css')}}" rel="stylesheet" type="text/css" media="all" />
+<!-- <link href="fonts.css" rel="stylesheet" type="text/css" media="all" /> -->
+<!-- <link href="{{url_for('static',filename='css/main.css')}}" rel="stylesheet" /> -->
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#">DIAGNOSIS</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
+				<li><a href="https://github.com/jaikrish5/MainEffusionClassifier" accesskey="2" title="">Github</a></li>
+				<li><a href="#" accesskey="3" title=""></a></li>
+				<li><a href="#" accesskey="4" title=""></a></li>
+				<li><a href="#" accesskey="5" title=""></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="header-featured">
+		<div id="banner-wrapper">
+			<div id="banner" class="container">
+				<h2>pleural Effusion</h2>
+				<p>A pleural effusion is an unusual amount of fluid around the lung.
+					Thin membranes, called pleura, cover the outside of the lungs and the inside of the chest cavity.
+					It’s a serious condition associated with an increased risk of death.
+					Our  Machine Learning Model will help you to detect this disease with the help of the X-ray within minutes.</p>
+				<form action="/scan" method="POST" enctype="multipart/form-data">	
+				<input type="file" name="myImage" accept="image/*" />
+				<input type='submit' class="button" value="Scan it">
+			</div>
+				</form>
+		</div>
+		
+	</div>
+</div>
+<div id="wrapper">
+	<div id="page" class="container">
+		<div id="content">
+			<div class="title">
+				<h2>How does pleural effusion develop?</h2>
+				<span class="byline"></span> </div>
+				<!-- <link href="{{url_for('static',filename='css/main.css')}}" rel="stylesheet" /> -->
+				<!-- <img src="images/banner.jpg" alt="" class="image image-full" /> -->
+
+			<p><img src="{{url_for('static',filename='images/800wm.jpg')}}" alt="" class="image image-full" /></p>
+			<p>The pleura creates too much fluid when it’s irritated, inflamed, or infected. This fluid accumulates in the chest cavity outside the lung, causing what’s known as a pleural effusion.
+
+				Certain types of cancer can cause pleural effusions, lung cancer in men and breast cancer in women being the most common.</p>
+			
+		</div>
+		<div id="sidebar">
+			<ul class="style1">
+				<li class="first">
+					<h3>Other causes of pleural effusions include:</h3>
+					<p>congestive heart failure (the most common cause overall)</p>
+					<p>cirrhosis or poor liver function</p>
+					<p>pulmonary embolism, which is caused by a blood clot and is a blockage in the lung arteries</p>
+					<p>complications from open-heart surgery</p>
+					<p>pneumonia</p>
+					<p>severe kidney disease</p>
+					<p>autoimmune diseases, such as lupus and rheumatoid arthritis</p>
+
+				</li>
+				<!-- <li>
+					<h3>Sagittis diam dolor sit amet</h3>
+					<p><a href="#">In posuere eleifend odio. Quisque semper augue mattis wisi. Pellentesque viverra vulputate enim. Aliquam erat volutpat.</a></p>
+				</li>
+				<li>
+					<h3>Maecenas ac quam risus</h3>
+					<p><a href="#">In posuere eleifend odio. Quisque semper augue mattis wisi. Pellentesque viverra vulputate enim. Aliquam erat volutpat.</a></p>
+				</li> -->
+			</ul>
+			<!-- <div id="stwo-col">
+				<div class="sbox1">
+					<h2>Etiam rhoncus</h2>
+					<ul class="style2">
+						<li><a href="#">Semper quis egetmi dolore</a></li>
+						<li><a href="#">Quam turpis feugiat dolor</a></li>
+						<li><a href="#">Amet ornare hendrerit lectus</a></li>
+						<li><a href="#">Quam turpis feugiat dolor</a></li>
+					</ul>
+				</div>
+				<div class="sbox2">
+					<h2>Integer gravida</h2>
+					<ul class="style2">
+						<li><a href="#">Semper quis egetmi dolore</a></li>
+						<li><a href="#">Quam turpis feugiat dolor</a></li>
+						<li><a href="#">Consequat lorem phasellus</a></li>
+						<li><a href="#">Amet turpis feugiat amet</a></li>
+					</ul>
+				</div>
+			</div>
+		</div> -->
+	</div>
+</div>
+
+</body>
+</html>
